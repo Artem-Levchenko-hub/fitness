@@ -4,12 +4,20 @@ from django.conf import settings
 
 class CustomUser(AbstractUser):
     height = models.IntegerField(verbose_name='Рост(см)')
-    weight_body = models.DecimalField(decimal_places=1, verbose_name='Вес(кг)')
-    fat_percent = models.DecimalField(decimal_places=1, verbose_name='Процент подкожного жира(%)')
+    weight_body = models.DecimalField(
+        decimal_places=1,
+        max_digits=5,
+        verbose_name='Вес(кг)'
+        )
+    fat_percent = models.DecimalField(
+        decimal_places=1,
+        max_digits=4,
+        verbose_name='Процент подкожного жира(%)'
+        )
     class Meta:
         verbose_name = 'Пользователь'
         verbose_name_plural = 'Пользователи'
-        
+
 class Goals(models.Model):
     title = models.CharField(max_length=255, verbose_name='Название')
     user = models.ForeignKey(
