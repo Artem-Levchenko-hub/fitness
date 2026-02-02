@@ -10,9 +10,9 @@ class CustomUserAdmin(admin.ModelAdmin):
         'height',
         'weight_body'
         )
-    search_fields = ('user__username',)
+    search_fields = ('username',)
     # Register your models here.
-    list_filter = ('user',)
+    list_filter = ('username',)
 
 @admin.register(Goals)
 class GoalsAdmin(admin.ModelAdmin):
@@ -21,5 +21,4 @@ class GoalsAdmin(admin.ModelAdmin):
         'title'
         )
     search_fields = ('user__username',)
-    # Register your models here.
-    list_filter = ('user__username',)
+    list_filter = ('user',)
