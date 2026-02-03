@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Profile',
-    'workout',
+    'apps.accounts',
+    'apps.workout',
 ]
 
 MIDDLEWARE = [
@@ -119,4 +119,4 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-AUTH_USER_MODEL = 'Profile.CustomUser'
+AUTH_USER_MODEL = 'accounts.CustomUser'
