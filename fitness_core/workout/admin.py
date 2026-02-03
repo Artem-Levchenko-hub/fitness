@@ -43,3 +43,9 @@ class RealSessionAdmin(admin.ModelAdmin):
 
     def template_session_title(self, obj):
         return obj.template_session.title
+    
+@admin.register(Set)
+class SetAdmin(admin.ModelAdmin):
+    list_display = ('exercise', 'real_reps', 'weight', 'session_set')
+    search_fields = ('exercise__title', 'session_set',)
+    search_fields = ('exercise__title', 'session_set',)

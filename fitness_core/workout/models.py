@@ -76,6 +76,9 @@ class RealSession(models.Model):
     class Meta:
         verbose_name = 'Реальная сессия'
         verbose_name_plural = 'Реальные сессии'
+    
+    def __str__(self):
+        return f'{self.template_session.title} : {self.date}'
 
 class Set(models.Model):
     exercise = models.ForeignKey(
@@ -96,5 +99,8 @@ class Set(models.Model):
             related_name='sets',
             verbose_name='Сессия'
     )
+    class Meta:
+        verbose_name = 'Подход'
+        verbose_name_plural = 'Подходы'
     def __str__(self):
         return f'{self.exercise.title}: {self.real_reps} x {self.weight} кг'
