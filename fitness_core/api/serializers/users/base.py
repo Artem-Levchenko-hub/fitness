@@ -10,7 +10,7 @@ class UserBaseSerializer(serializers.ModelSerializer):
                   'first_name',
                   'last_name'
                   ]
-        read_only_true = ['id']
+        read_only_fields = ['id']
 
 
 
