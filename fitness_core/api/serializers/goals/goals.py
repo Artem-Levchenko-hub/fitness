@@ -7,5 +7,4 @@ class GoalsSerializer(serializers.ModelSerializer):
         fields = [
             'id',
             'title',
-            'description'
         ]
