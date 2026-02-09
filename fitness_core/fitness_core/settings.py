@@ -40,7 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.accounts',
     'apps.workout',
+<<<<<<< HEAD
     'rest_framework',
+=======
+    'rest_framework'
+>>>>>>> 2f362468418f10cbd60e4cf676e1518553849bad
 ]
 
 MIDDLEWARE = [
