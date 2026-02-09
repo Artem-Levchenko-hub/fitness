@@ -8,4 +8,5 @@ class ProfileUpdatesSerializer(UserBaseSerializer):
             'weight_body',
             'height'
         ]
+        read_only_fields = ['id']
         
