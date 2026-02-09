@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# IDE
+.vscode/
+.idea/
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+
+# Лог-файлы
+*.log
+*.log.*
+
+# Тесты
+.pytest_cache/
+.coverage
