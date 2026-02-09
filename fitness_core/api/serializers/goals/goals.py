@@ -7,9 +7,5 @@ class GoalsSerializer(serializers.ModelSerializer):
         model = Goals
         fields = [
             'id',
-<<<<<<< HEAD
-            'title'
-=======
             'title',
->>>>>>> 2f362468418f10cbd60e4cf676e1518553849bad
         ]
